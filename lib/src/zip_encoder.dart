@@ -66,7 +66,7 @@ class ZipEncoder {
   late _ZipEncoderData _data;
   OutputStreamBase? _output;
   final Encoding filenameEncoding;
-  final Random _random = Random.secure();
+  final Random _random = Random();
   final String? password;
 
   ZipEncoder({this.filenameEncoding = const Utf8Codec(), this.password});
